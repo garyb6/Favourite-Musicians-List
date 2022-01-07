@@ -2,4 +2,66 @@ body {
     color: white;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color: purple;
+    font-size: 22px;
+}
+
+
+#form-wrapper{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 5;
+    line-height: 40px;
+    box-sizing: border-box;
+    border-color: white;
+    color: white;
+}
+
+#artist-list{
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 50px 90px;
+}
+
+.artist-list-item{
+    background-color: rgb(190, 96, 190);
+    padding: 1%;
+    align-self: center;
+    width: 220px;
+    height: 230px;
+    box-sizing: border-box;
+    font-size: 20px;
+    border-radius: 25px 75px;
+}
+
+.button{
+        padding: 10px;
+        margin: 10px;
+        width: 100px;
+        height: 40px;
+        border: none;
+        outline: none;
+        background: #2e033c;
+        color: #fff;
+        font-size: 16px;
+        border-radius: 40px;
+        text-align: center;
+        box-shadow: 0 6px 20px -5px rgba(0,0,0,0.4);
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+}
+.button:hover{
+    transform: translateY(0) scale(1.5);
+}
+
+h1{
+    text-align: center;
+}
+
+.primary{
+    text-transform: capitalize;
 }
