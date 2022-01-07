@@ -3,9 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css"/>
-    <title>Favourite Musician App</title>
+    <title>Favourite Artist App</title>
 </head>
 <body>
-    Hello Pet
+    <h1>Make a list of your favourite music artists!</h1>
+    <form id="new-artist-form">
+        <div id="form-wrapper">
+            <div id="form-item">
+                <label for="artist" class="primary">Artist</label>
+                <input type="text" id="artist" required/>
+            </div>
+            <div class="form-item">
+                <label for="country" class="primary">Which Country are they from?</label>
+                <input type="text" id="country" required/>
+            </div>
+            <div class="form-item">
+                <label for="genre" class="primary">Genre</label>
+                <select id="genre">
+                    <option value="" disabled selected></option>
+                    <option value="Pop">Pop</option>
+                    <option value="Indie">Indie</option>
+                    <option value="Rock">Rock</option>
+                    <option value="Pop Punk">Pop Punk</option>
+                    <option value="Dance">Dance</option>
+                </select>
+            </div>
+        </div>
+        <input type="submit" value="Save!"/>
+    </form>
+    <h2>Favourite Artist List</h2>
+    <ul id="artist-list"></ul>
 </body>
 </html>
