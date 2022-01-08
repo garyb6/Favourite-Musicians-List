@@ -24,6 +24,7 @@ const createArtistListEntry = function (form){
 
     const artist = document.createElement('h3');
     artist.textContent = form.artist.value;
+    
     artistListEntry.appendChild(artist);
 
     const country = document.createElement('h4');
